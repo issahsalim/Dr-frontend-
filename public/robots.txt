@@ -1,0 +1,18 @@
+# robots.txt for Dr. Haruna Gado Yakubu Website
+# https://boresa.netlify.app
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://boresa.netlify.app/sitemap.xml
+
+# Allow all search engines to crawl
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Crawl-delay (optional, helps prevent server overload)
+Crawl-delay: 1

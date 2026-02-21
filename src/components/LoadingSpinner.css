@@ -1,0 +1,85 @@
+/* LoadingSpinner – modern, theme-aware loader (bouncing dots) */
+
+.loading-spinner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2rem;
+  color: var(--color-text-muted);
+  min-height: 120px;
+}
+
+.loading-spinner--hero {
+  min-height: 280px;
+  padding: 4rem 2rem;
+  color: var(--hero-text, var(--color-text-muted));
+}
+
+.loading-spinner--hero .loading-spinner__ring {
+  width: 56px;
+  height: 56px;
+}
+
+.loading-spinner--hero .loading-spinner__dot {
+  width: 14px;
+  height: 14px;
+}
+
+.loading-spinner--hero .loading-spinner__message {
+  font-size: 1.1rem;
+  letter-spacing: 0.02em;
+}
+
+.loading-spinner--page {
+  min-height: 320px;
+  padding: 4rem 2rem;
+}
+
+.loading-spinner--page .loading-spinner__ring {
+  width: 52px;
+  height: 52px;
+}
+
+.loading-spinner--page .loading-spinner__dot {
+  width: 12px;
+  height: 12px;
+}
+
+.loading-spinner__ring {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.loading-spinner__dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--color-primary);
+  animation: loading-spinner-bounce 0.6s ease-in-out infinite both;
+}
+
+.loading-spinner__dot:nth-child(1) { animation-delay: 0s; }
+.loading-spinner__dot:nth-child(2) { animation-delay: 0.15s; }
+.loading-spinner__dot:nth-child(3) { animation-delay: 0.3s; }
+
+@keyframes loading-spinner-bounce {
+  0%, 80%, 100% {
+    transform: scale(0.75);
+    opacity: 0.5;
+  }
+  40% {
+    transform: scale(1.15);
+    opacity: 1;
+  }
+}
+
+.loading-spinner__message {
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+}
