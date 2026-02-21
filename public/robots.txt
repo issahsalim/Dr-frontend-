@@ -2,6 +2,9 @@
 # https://boresa.netlify.app
 
 User-agent: *
+Disallow: /
+
+User-agent: *
 Allow: /
 
 # Sitemap location
