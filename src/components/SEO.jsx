@@ -1,6 +1,6 @@
 import { Helmet } from 'react-helmet-async';
 
-const SITE_URL = 'https://dr-haruna-gado.netlify.app';
+const SITE_URL = 'https://dryakubuharunagado.com';
 const DEFAULT_IMAGE = `${SITE_URL}/8.jpg`;
 
 export default function SEO({
