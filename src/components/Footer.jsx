@@ -11,7 +11,9 @@ export default function Footer() {
           <Link to="/">Home</Link>
           <Link to="/gallery">Gallery</Link>
         </nav>
-        <p className="footer-copy">© {year} Dr. Haruna Gado Yakubu. All rights reserved.</p>
+        <p className="footer-copy">© {year} Dr. Haruna Gado Yakubu. All rights reserved.
+          design by <a href='https://boresa.netlify.com' target='_blank'>Abdul Salim</a>
+        </p>
       </div>
     </footer>
   );
